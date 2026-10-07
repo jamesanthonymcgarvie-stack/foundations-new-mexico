@@ -17,3 +17,20 @@
 @keyframes foundationSheen{from{background-position:0% 50%}to{background-position:100% 50%}}
 @keyframes foundationReveal{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:translateY(0)}}
 @media(prefers-reduced-motion:reduce){.hero::before,.hero::after,.hero h1 span,.hero-room{animation:none!important}.request{transition:none}}
+
+/* Counseling section: airy editorial styling to complement the hero */
+.human{position:relative;max-width:900px;padding:86px clamp(25px,7vw,92px) 92px;background:linear-gradient(155deg,#fff 15%,#fffafd 64%,#f0faf9 100%);overflow:hidden}
+.human::before{content:"";position:absolute;right:-100px;bottom:12%;width:340px;height:340px;background:radial-gradient(circle,rgba(34,165,163,.11),transparent 72%);pointer-events:none}
+.human .angle-wrap{position:relative;max-width:700px;height:440px;margin:0 auto 64px;clip-path:polygon(0 0,91% 0,100% 100%,9% 100%);filter:drop-shadow(0 15px 25px rgba(19,79,76,.12))}
+.human .second-room{object-position:center 48%;transition:transform .8s ease}
+.human .angle-wrap:hover .second-room{transform:scale(1.035)}
+.human .pink-label{font-size:.8rem;letter-spacing:.16em;margin-bottom:10px}
+.human .dots{font-size:1.35rem;letter-spacing:5px;margin:8px 0 24px}
+.human h2{font-size:clamp(2.05rem,4vw,3.25rem);letter-spacing:-.035em;line-height:1.12;max-width:700px}
+.human>p:not(.pink-label):not(.links){position:relative;font-size:1.12rem;line-height:1.8;max-width:690px;color:#35383b}
+.human .links{display:flex;flex-wrap:wrap;gap:14px;margin-top:32px}
+.human .links a{display:inline-flex;align-items:center;min-height:45px;padding:12px 20px;border-radius:50px;border:1px solid rgba(34,165,163,.35);text-decoration:none;color:#176f71;background:#fff;font-weight:700;transition:transform .2s,box-shadow .2s}
+.human .links a:first-child{background:var(--teal);color:#fff;border-color:var(--teal)}
+.human .links a:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(19,79,76,.12)}
+@media(max-width:600px){.human{padding:56px 24px 70px}.human .angle-wrap{height:275px;margin-bottom:43px}.human h2{font-size:2rem}.human>p:not(.pink-label):not(.links){font-size:1.03rem;line-height:1.7}.human .links{display:grid}.human .links a{justify-content:center}}
+@media(prefers-reduced-motion:reduce){.human .second-room,.human .links a{transition:none}}
