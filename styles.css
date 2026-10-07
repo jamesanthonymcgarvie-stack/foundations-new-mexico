@@ -40,3 +40,14 @@
 .human .links a{display:inline-flex!important;align-items:center;justify-content:center;text-align:center;text-decoration:none!important;background:#fff!important;color:#13777a!important;border:1.5px solid #22a5a3!important;border-radius:999px!important;padding:13px 22px!important;font-size:1rem!important;font-weight:800!important;line-height:1.3!important}
 .human .links a:first-child{background:#168f93!important;color:#fff!important}
 @media(max-width:600px){.human{padding:48px 25px 62px!important}.human h2{font-size:clamp(1.75rem,7vw,2.1rem)!important;line-height:1.18!important}.human>p:not(.pink-label):not(.links){font-size:1rem!important;line-height:1.65!important}.human .links{display:grid!important;gap:12px!important}.human .links a{width:100%!important}.human .pink-label{font-size:.78rem!important;letter-spacing:.11em!important}.human .dots{margin:10px 0 23px!important}}
+
+/* People section: warm, distinctive, polished */
+.people{position:relative;isolation:isolate;overflow:hidden;max-width:900px;margin:0 auto;padding:85px clamp(25px,7vw,90px) 92px;background:linear-gradient(140deg,#087a7e 0%,#168f93 53%,#0a666c 100%);color:#fff}
+.people::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(ellipse at 90% 8%,rgba(255,255,255,.16),transparent 44%),radial-gradient(ellipse at 5% 100%,rgba(238,23,109,.22),transparent 50%)}
+.people .pink-label{display:inline-block;color:#fff;font-size:.78rem;letter-spacing:.14em;font-weight:800;padding:10px 15px;border:1px solid rgba(255,255,255,.48);border-radius:30px;background:rgba(255,255,255,.08);margin:0 0 27px}
+.people h2{font-size:clamp(2.15rem,4.5vw,3.5rem);line-height:1.13;letter-spacing:-.035em;max-width:750px;margin:0 0 27px;color:#fff}
+.people>p:not(.pink-label){font-size:clamp(1.04rem,1.8vw,1.19rem);line-height:1.75;max-width:680px;color:#f4ffff;margin-bottom:38px}
+.people .portrait-placeholder{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:13px;min-height:220px;border-radius:16px;border:1px solid rgba(255,255,255,.35);background:linear-gradient(135deg,rgba(255,255,255,.15),rgba(255,255,255,.05));backdrop-filter:blur(8px);box-shadow:0 18px 45px rgba(0,57,59,.16);color:#fff;text-align:center;padding:25px}
+.people .portrait-placeholder span{font-family:Georgia,serif;font-size:clamp(1.7rem,4vw,2.7rem);font-weight:700}
+.people .portrait-placeholder small{font-size:.88rem;letter-spacing:.1em;font-weight:700}
+@media(max-width:600px){.people{padding:62px 25px 68px}.people h2{font-size:2.1rem}.people>p:not(.pink-label){font-size:1.04rem;line-height:1.7}.people .portrait-placeholder{min-height:175px}}
