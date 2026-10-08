@@ -114,3 +114,29 @@
 .journal-reading-end p{font:700 1.5rem Georgia,serif;margin:0 0 12px}
 .journal-reading-end a{color:#0a7377;font-weight:800}
 @media(max-width:600px){.journal-reading{padding:56px 24px 72px}.journal-back{margin-bottom:35px}.journal-reading-body{font-size:1.08rem}}
+
+/* Journal editorial sparkle: restrained celestial glow, glossy magazine cards */
+.journal-page{position:relative;isolation:isolate;overflow:hidden;max-width:1100px;min-height:83vh;padding:106px clamp(24px,7vw,85px) 105px;background:radial-gradient(ellipse at 12% 0%,rgba(238,23,109,.18),transparent 45%),radial-gradient(ellipse at 92% 28%,rgba(34,165,163,.24),transparent 44%),linear-gradient(135deg,#fff7fc 0%,#fff 47%,#e9f8f7 100%)}
+.journal-page::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background-image:radial-gradient(circle,rgba(232,28,115,.65) 0 1px,transparent 2px),radial-gradient(circle,rgba(34,165,163,.7) 0 1px,transparent 2px),radial-gradient(circle,rgba(207,161,87,.6) 0 1px,transparent 2px);background-size:173px 193px,263px 229px,337px 293px;background-position:15px 40px,92px 120px,30px 190px;opacity:.6;animation:foundationStardust 14s ease-in-out infinite alternate}
+.journal-page::after{content:"✧";position:absolute;right:7%;top:85px;font:normal clamp(5rem,11vw,10rem)/1 Georgia,serif;color:rgba(223,60,131,.16);pointer-events:none}
+.journal-page .journal-head{position:relative;max-width:850px;margin-bottom:57px}
+.journal-page .journal-head .pink-label{display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(238,23,109,.25);background:rgba(255,255,255,.68);padding:10px 17px;border-radius:100px;box-shadow:0 8px 30px rgba(238,23,109,.07)}
+.journal-page .journal-head .pink-label::before{content:"✦";font-size:.8rem}
+.journal-page h1{font-family:Georgia,serif;font-size:clamp(3.05rem,6.7vw,5.8rem);line-height:1.04;letter-spacing:-.055em;color:#103f42;max-width:840px;text-wrap:balance;text-shadow:0 1px 0 rgba(255,255,255,.5)}
+.journal-page h1 em{background:linear-gradient(105deg,#ec176d,#ba398e 52%,#168f93);background-clip:text;-webkit-background-clip:text;color:transparent;font-style:italic}
+.journal-page .journal-head>p:last-child{font-size:clamp(1.13rem,2vw,1.3rem);line-height:1.75;max-width:670px}
+.journal-page .journal-grid{gap:22px}
+.journal-page .journal-card{position:relative;isolation:isolate;overflow:hidden;display:flex;flex-direction:column;min-height:345px;padding:34px 27px 28px;border:1px solid rgba(34,165,163,.2);border-radius:22px;background:linear-gradient(145deg,rgba(255,255,255,.97),rgba(255,255,255,.86));box-shadow:0 18px 50px rgba(14,69,74,.10),0 3px 12px rgba(238,23,109,.05);transition:transform .3s ease,box-shadow .3s ease}
+.journal-page .journal-card::before{content:"";position:absolute;inset:0 0 auto;height:5px;background:linear-gradient(90deg,#ee176d,#f7a5d0,#22a5a3,#d7b56e,#ee176d);background-size:200% 100%;animation:foundationSheen 9s ease-in-out infinite alternate}
+.journal-page .journal-card::after{content:"✧";position:absolute;right:14px;top:22px;font:normal 3rem Georgia,serif;color:rgba(34,165,163,.16);pointer-events:none}
+.journal-page .journal-card:nth-child(2){background:linear-gradient(155deg,#fff 40%,#fff1f7 100%)}
+.journal-page .journal-card:nth-child(3){background:linear-gradient(155deg,#fff 35%,#ecfaf9 100%)}
+.journal-page .journal-card:hover{transform:translateY(-7px);box-shadow:0 27px 65px rgba(14,69,74,.16),0 5px 15px rgba(238,23,109,.08)}
+.journal-page .journal-card h3{font-size:clamp(1.7rem,2.5vw,2.15rem);color:#183e40;margin:24px 0 16px}
+.journal-page .journal-card>p{line-height:1.75}
+.journal-page .journal-read{margin-top:auto;padding-top:24px;border-color:#e5e8e8}
+.journal-page .journal-read span{font-size:1.3rem;transition:transform .2s}
+.journal-page .journal-read:hover span{transform:translate(3px,-3px)}
+.journal-page .journal-note{margin-top:35px}
+@media(max-width:850px){.journal-page{padding:76px 24px 82px}.journal-page .journal-head{margin-bottom:38px}.journal-page .journal-card{min-height:0}.journal-page::after{top:125px;right:5%;font-size:5rem}}
+@media(prefers-reduced-motion:reduce){.journal-page::before,.journal-page .journal-card::before{animation:none}.journal-page .journal-card,.journal-page .journal-read span{transition:none}}
