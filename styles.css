@@ -140,3 +140,35 @@
 .journal-page .journal-note{margin-top:35px}
 @media(max-width:850px){.journal-page{padding:76px 24px 82px}.journal-page .journal-head{margin-bottom:38px}.journal-page .journal-card{min-height:0}.journal-page::after{top:125px;right:5%;font-size:5rem}}
 @media(prefers-reduced-motion:reduce){.journal-page::before,.journal-page .journal-card::before{animation:none}.journal-page .journal-card,.journal-page .journal-read span{transition:none}}
+
+/* The Foundations Journal — cinematic editorial redesign */
+.magazine{max-width:1200px;margin:auto;position:relative;overflow:hidden;background:#faf6f5;color:#183b3c}
+.magazine-intro{position:relative;isolation:isolate;overflow:hidden;padding:105px clamp(26px,8vw,105px) 94px;background:radial-gradient(ellipse at 88% 0%,rgba(242,72,146,.25),transparent 48%),radial-gradient(ellipse at 6% 92%,rgba(25,162,160,.28),transparent 50%),linear-gradient(125deg,#132c37 0%,#173c43 56%,#3b2641 100%);color:#fff}
+.magazine-intro::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background-image:radial-gradient(circle,rgba(255,255,255,.85) 0 1px,transparent 2px),radial-gradient(circle,rgba(250,167,203,.8) 0 1px,transparent 2px);background-size:193px 227px,317px 263px;background-position:24px 27px,110px 89px;opacity:.45;animation:foundationStardust 14s ease-in-out infinite alternate}
+.magazine-eyebrow{font-size:.78rem;letter-spacing:.23em;font-weight:800;color:#f4c2d7;margin:0 0 37px}.magazine-eyebrow span{padding:0 12px;color:#91dad7}
+.magazine-intro h1{font:400 clamp(3.4rem,7.8vw,7rem)/.99 Georgia,serif;letter-spacing:-.06em;max-width:950px;margin:0 0 33px;text-wrap:balance}
+.magazine-intro h1 em{font-style:italic;background:linear-gradient(100deg,#fba4ce 10%,#fff2f6 47%,#9ae4df 93%);background-clip:text;-webkit-background-clip:text;color:transparent}
+.magazine-intro>p:not(.magazine-eyebrow){font-size:clamp(1.05rem,1.9vw,1.3rem);line-height:1.7;max-width:600px;color:#e6f2f1}
+.magazine-spark{position:absolute;right:8%;bottom:60px;color:#f6b3d1;font-size:2rem;letter-spacing:14px;opacity:.7}
+.magazine-feature{display:grid;grid-template-columns:1.05fr .95fr;min-height:520px;background:#fff}
+.magazine-photo{position:relative;min-height:500px;background:linear-gradient(transparent,rgba(15,45,46,.1)),url("5B493C05-90E5-46DB-8E61-14EF43C59E51.png") center/cover no-repeat}
+.magazine-photo-mark{position:absolute;left:26px;top:22px;font-size:2.5rem;color:rgba(255,255,255,.85);text-shadow:0 0 16px #ee176d}
+.magazine-feature-copy{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;padding:clamp(36px,5vw,76px);background:radial-gradient(ellipse at 100% 0%,rgba(238,23,109,.11),transparent 55%),#fff}
+.magazine-kicker{display:flex;justify-content:space-between;width:100%;gap:12px;color:#aa165c;font-size:.73rem;font-weight:900;letter-spacing:.14em}
+.magazine-kicker span{color:#15898a}
+.magazine-feature-copy h2{font:400 clamp(2.7rem,4.8vw,4.7rem)/1.06 Georgia,serif;letter-spacing:-.045em;margin:30px 0 23px;color:#173d40}
+.magazine-feature-copy h2 em{font-style:italic;color:#dc2478}
+.magazine-feature-copy>p:not(.magazine-kicker){font-size:1.08rem;line-height:1.75;color:#516063}
+.magazine-feature-copy>a{margin-top:24px;display:inline-flex;gap:24px;align-items:center;padding:15px 23px;border-radius:999px;background:#ee176d;color:#fff;text-decoration:none;font-weight:800}
+.magazine-more{padding:76px clamp(25px,7vw,85px) 86px;background:linear-gradient(145deg,#fbf6f5,#eff8f7)}
+.magazine-more-heading{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #b5d6d3;padding-bottom:18px;margin-bottom:31px;font-size:.79rem;letter-spacing:.19em;font-weight:900;color:#126e73}
+.magazine-more-heading span:last-child{font-size:2rem;color:#d62b7a}
+.magazine-story-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.magazine-story-grid .journal-card{min-height:340px;display:flex;flex-direction:column;padding:39px;border-radius:2px;border:0;border-top:5px solid #e9277a;background:#fff;box-shadow:0 18px 45px rgba(21,71,73,.09)}
+.magazine-story-grid .journal-card:nth-child(2){border-top-color:#22a5a3}
+.magazine-story-grid .journal-card h3{font:400 clamp(2rem,3vw,3rem)/1.12 Georgia,serif;letter-spacing:-.035em;margin:24px 0 20px}
+.magazine-story-grid .journal-card>p{font-size:1.05rem;line-height:1.7}
+.magazine-story-grid .journal-read{margin-top:auto}
+.magazine-disclaimer{font-size:.81rem;line-height:1.6;color:#647476;padding:0 clamp(25px,7vw,85px) 34px;margin:0;background:#eff8f7}
+@media(max-width:760px){.magazine-intro{padding:74px 25px 75px}.magazine-intro h1{font-size:clamp(3.1rem,11vw,4.6rem)}.magazine-spark{display:none}.magazine-feature{grid-template-columns:1fr}.magazine-photo{min-height:360px}.magazine-feature-copy{padding:43px 26px 56px}.magazine-more{padding:58px 24px 66px}.magazine-story-grid{grid-template-columns:1fr}.magazine-story-grid .journal-card{padding:30px;min-height:290px}}
+@media(prefers-reduced-motion:reduce){.magazine-intro::before{animation:none}}
