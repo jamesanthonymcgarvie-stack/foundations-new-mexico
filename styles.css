@@ -62,3 +62,25 @@
 .people .people-photo img{display:block;width:100%;height:420px;object-fit:cover;object-position:center;border-radius:16px;box-shadow:0 18px 45px rgba(0,49,52,.27);border:1px solid rgba(255,255,255,.35)}
 .people .people-photo figcaption{font-size:.82rem;letter-spacing:.04em;color:#f2ffff;text-align:center}
 @media(max-width:760px){.people{grid-template-columns:1fr;gap:28px}.people .people-photo img{height:300px}.people h2{font-size:clamp(2rem,8vw,2.6rem)}}
+
+/* Contact: invitation, not intake paperwork */
+.contact{position:relative;overflow:hidden;max-width:1100px;margin:0 auto;padding:90px clamp(24px,7vw,95px) 86px;background:radial-gradient(ellipse at 100% 0%,rgba(34,165,163,.15),transparent 50%),radial-gradient(ellipse at 0% 100%,rgba(238,23,109,.10),transparent 55%),#fff}
+.contact-inner{max-width:760px;margin:auto}
+.contact .pink-label{font-size:.79rem;letter-spacing:.16em;margin:0 0 24px}
+.contact h2{font-size:clamp(2.2rem,5vw,4.2rem);line-height:1.12;letter-spacing:-.045em;margin:0 0 23px;color:#122e31}
+.contact h2 em{font-style:normal;color:var(--pink)}
+.contact-intro{font-size:clamp(1.07rem,2vw,1.3rem);line-height:1.7;max-width:630px;color:#384548;margin:0}
+.contact-actions{display:flex;flex-wrap:wrap;gap:13px;margin:32px 0 16px}
+.contact-actions a{display:inline-flex;align-items:center;justify-content:space-between;gap:24px;min-height:55px;padding:15px 24px;border-radius:100px;text-decoration:none;font-weight:800;transition:transform .2s,box-shadow .2s}
+.contact-actions a:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(0,60,63,.14)}
+.contact-primary{background:var(--pink);color:#fff}
+.contact-secondary{border:1.5px solid var(--teal);color:#116b6e;background:#fff}
+.contact-privacy{font-size:.85rem;line-height:1.6;color:#61696b;max-width:580px}
+.contact-details{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:49px;padding-top:28px;border-top:1px solid #dce8e7}
+.contact-details>div{display:flex;flex-direction:column;gap:7px}
+.contact-details span{color:#0f777a;font-size:.76rem;font-weight:900;letter-spacing:.15em;margin-bottom:8px}
+.contact-details address{margin:0;font-size:1rem;font-style:normal;line-height:1.6}
+.contact-details a{font-size:1rem;color:#193d40;text-decoration:none;overflow-wrap:anywhere}
+.contact-details a:hover{text-decoration:underline}
+@media(max-width:600px){.contact{padding:65px 24px 72px}.contact h2{font-size:clamp(2.15rem,9vw,2.85rem)}.contact-actions{display:grid}.contact-actions a{width:100%}.contact-details{grid-template-columns:1fr;gap:30px;margin-top:38px}}
+@media(prefers-reduced-motion:reduce){.contact-actions a{transition:none}}
