@@ -96,3 +96,21 @@
 .header-actions .request{display:inline-flex;align-items:center;justify-content:center;min-height:42px;border-radius:999px;text-align:center;white-space:nowrap}
 @media(max-width:600px){.site-header{gap:8px}.header-actions{gap:6px;flex-wrap:nowrap}.blog-nav{font-size:.73rem;padding:9px 10px}.header-actions .request{font-size:.68rem;padding:9px 10px;white-space:normal;line-height:1.15}.brand img{width:min(175px,38vw)}}
 @media(max-width:380px){.blog-nav{font-size:.68rem;padding:8px}.header-actions .request{font-size:.64rem;padding:8px}.brand img{width:32vw}}
+
+/* Dedicated journal pages and readable article layout */
+.journal h1{font-size:clamp(2.5rem,5vw,4.3rem);line-height:1.12;letter-spacing:-.04em;margin:0 0 20px}.journal h1 em{font-style:normal;color:var(--pink)}
+.journal-read{display:inline-flex;justify-content:space-between;gap:16px;width:100%;margin-top:22px;padding-top:18px;border-top:1px solid #e5eeee;color:#a91357;text-decoration:none;font-weight:800}
+.journal-read:hover,.journal-back:hover{text-decoration:underline}
+.journal-all{display:inline-flex;align-items:center;gap:18px;background:#168f93;color:#fff;border-radius:999px;text-decoration:none;padding:15px 24px;font-weight:800;margin-top:34px}
+.journal-page{min-height:75vh}
+.journal-reading{max-width:820px;margin:0 auto;padding:80px clamp(24px,7vw,80px) 100px;background:radial-gradient(ellipse at 100% 0%,rgba(34,165,163,.1),transparent 48%),#fff}
+.journal-back{display:inline-block;margin-bottom:48px;color:#0b7779;font-weight:800;text-decoration:none}
+.journal-reading .pink-label{font-size:.78rem;letter-spacing:.16em;margin:0 0 22px}
+.journal-reading h1{font:700 clamp(2.6rem,5.6vw,4.8rem)/1.12 Georgia,serif;letter-spacing:-.04em;color:#193c3d;margin:0 0 28px}
+.journal-deck{font-size:clamp(1.2rem,2.3vw,1.5rem);line-height:1.55;color:#526265;border-bottom:1px solid #dce8e7;padding-bottom:35px;margin-bottom:40px}
+.journal-reading-body{font:1.16rem/1.85 Georgia,serif;color:#263e40}
+.journal-reading-body p{margin:0 0 26px}
+.journal-reading-end{margin-top:55px;padding:26px;border-left:4px solid var(--pink);background:#f4fbfa}
+.journal-reading-end p{font:700 1.5rem Georgia,serif;margin:0 0 12px}
+.journal-reading-end a{color:#0a7377;font-weight:800}
+@media(max-width:600px){.journal-reading{padding:56px 24px 72px}.journal-back{margin-bottom:35px}.journal-reading-body{font-size:1.08rem}}
