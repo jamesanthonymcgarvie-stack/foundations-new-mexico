@@ -186,3 +186,11 @@
 .magazine .magazine-feature-copy h2{max-width:780px;font-size:clamp(2.4rem,4.5vw,4.2rem);margin:18px 0}
 .magazine .magazine-feature-copy>p:not(.magazine-kicker){max-width:720px}
 .magazine .magazine-kicker{max-width:800px}
+
+/* Journal article photography */
+.magazine .journal-feature-image{display:block;width:100%;max-height:530px;object-fit:cover;object-position:center}
+.magazine .magazine-feature{overflow:hidden}
+.magazine .journal-card-image{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;margin:0 0 22px;border-radius:14px}
+.journal-article-figure{margin:28px 0 38px;width:100%}
+.journal-article-figure img{display:block;width:100%;height:auto;max-height:540px;object-fit:cover;border-radius:18px}
+@media(max-width:700px){.magazine .journal-feature-image{max-height:none;aspect-ratio:4/3;object-fit:cover}.magazine .journal-card-image{aspect-ratio:4/3}.journal-article-figure{margin:22px 0 28px}.journal-article-figure img{max-height:none;aspect-ratio:4/3;object-fit:cover;border-radius:12px}}
