@@ -194,3 +194,9 @@
 .journal-article-figure{margin:28px 0 38px;width:100%}
 .journal-article-figure img{display:block;width:100%;height:auto;max-height:540px;object-fit:cover;border-radius:18px}
 @media(max-width:700px){.magazine .journal-feature-image{max-height:none;aspect-ratio:4/3;object-fit:cover}.magazine .journal-card-image{aspect-ratio:4/3}.journal-article-figure{margin:22px 0 28px}.journal-article-figure img{max-height:none;aspect-ratio:4/3;object-fit:cover;border-radius:12px}}
+
+/* Appointment-first hierarchy and phone-friendly homepage copy */
+.hero-copy p{max-width:650px;margin-left:auto;overflow-wrap:break-word}
+.contact-actions .contact-primary{background:var(--pink);color:#fff;box-shadow:0 8px 22px rgba(238,23,109,.18)}
+.contact-actions .contact-secondary{background:#fff;color:#116b6e;border:1.5px solid var(--teal);box-shadow:none}
+@media(max-width:600px){.hero-copy p{max-width:100%;line-height:1.7}.contact-actions{display:grid;grid-template-columns:1fr;gap:12px}.contact-actions a{width:100%;min-height:54px;justify-content:center;text-align:center}.contact-actions .contact-primary{min-height:60px}}
